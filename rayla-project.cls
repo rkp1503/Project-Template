@@ -3,7 +3,7 @@
 % GitHub: https://github.com/rkp1503
 %-----------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{rayla-project}%[Rayla's Project's Class]
+\ProvidesClass{rayla-project}[Rayla's Project's Class]
 \LoadClass{article}
 
 %-----------------------------------------------------------------------------
@@ -21,17 +21,13 @@
 %-----------------------------------------------------------------------------
 % 3rd Party Packages
 %-----------------------------------------------------------------------------
-\usepackage{amssymb}
-\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
-\usepackage{geometry}
 \usepackage{lipsum}
-\usepackage{titlesec}
-\usepackage{xcolor}
 
 %-----------------------------------------------------------------------------
 % Geometry
 %-----------------------------------------------------------------------------
-\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
     
 %-----------------------------------------------------------------------------
 % Custom Title Style
@@ -57,4 +53,5 @@
 %-----------------------------------------------------------------------------
 % bibliography settings
 %-----------------------------------------------------------------------------
+\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
 \addbibresource{main.bib}
