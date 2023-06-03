@@ -46,6 +46,16 @@
 }
 
 %-----------------------------------------------------------------------------
+% Custom referencing
+%-----------------------------------------------------------------------------
+% Referencing equations
+% Use `~\eqref{eq:1}'
+% Referencing figures
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+% Referencing tables
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+
+%-----------------------------------------------------------------------------
 % bibliography settings
 %-----------------------------------------------------------------------------
 \usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
