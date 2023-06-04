@@ -19,11 +19,24 @@
 \newcommand{\dueDate}[1]{\newcommand{\dueDateLoc}{#1}}
 
 %-----------------------------------------------------------------------------
+% 3rd party packages
+%-----------------------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
+\usepackage{geometry}
+\usepackage{graphicx,epstopdf}
+\usepackage{lipsum}
+
+%-----------------------------------------------------------------------------
 % Geometry
 %-----------------------------------------------------------------------------
-\usepackage{geometry}
 \geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
 \setlength\parindent{0pt}
+
+%-----------------------------------------------------------------------------
+% Setting figures directory
+%-----------------------------------------------------------------------------
+\graphicspath{{figures/}}
     
 %-----------------------------------------------------------------------------
 % Custom Title Style
@@ -53,7 +66,7 @@
 % Referencing Appendicies
 \newcommand{\appref}[1]{Appendix~\ref{#1}}
 % Referencing equations
-\newcommand{\eqref}[1]{Equation~(\ref{#1})}
+\renewcommand{\eqref}[1]{Equation~(\ref{#1})}
 % Referencing figures
 \newcommand{\figref}[1]{Figure~\ref{#1}}
 % Referencing tables
@@ -62,17 +75,4 @@
 %-----------------------------------------------------------------------------
 % Bibliography settings
 %-----------------------------------------------------------------------------
-\usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
 \addbibresource{main.bib}
-
-%-----------------------------------------------------------------------------
-% Enabling figures
-%-----------------------------------------------------------------------------
-\usepackage{graphicx}
-\graphicspath{{figures/}}
-\usepackage{epstopdf}
-
-%-----------------------------------------------------------------------------
-% Dummy text
-%-----------------------------------------------------------------------------
-\usepackage{lipsum}
