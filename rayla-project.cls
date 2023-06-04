@@ -48,15 +48,19 @@
 %-----------------------------------------------------------------------------
 % Custom referencing
 %-----------------------------------------------------------------------------
+% Referencing Sections
+\newcommand{\secref}[1]{Section~\ref{#1}}
+% Referencing Appendicies
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
 % Referencing equations
-% Use `~\eqref{eq:1}'
+\newcommand{\eqref}[1]{Equation~(\ref{#1})}
 % Referencing figures
 \newcommand{\figref}[1]{Figure~\ref{#1}}
 % Referencing tables
 \newcommand{\tabref}[1]{Table~\ref{#1}}
 
 %-----------------------------------------------------------------------------
-% bibliography settings
+% Bibliography settings
 %-----------------------------------------------------------------------------
 \usepackage[backend=biber,style=numeric,sorting=ynt]{biblatex}
 \addbibresource{main.bib}
