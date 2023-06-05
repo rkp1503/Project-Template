@@ -59,9 +59,9 @@
 %-----------------------------------------------------------------------------
 % Custom referencing
 %-----------------------------------------------------------------------------
-% Referencing Sections
+% Referencing a section
 \newcommand{\secref}[1]{Section~\ref{#1}}
-% Referencing Appendicies
+% Referencing an appendix
 \newcommand{\appref}[1]{Appendix~\ref{#1}}
 % Referencing an equation
 \renewcommand{\eqref}[1]{Equation~(\ref{#1})}
